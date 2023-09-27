@@ -3,7 +3,7 @@
 import uploadPhoto from "./utils";
 import createUser from "./utils";
 
-function handleProfileSignup() {
+export default function handleProfileSignup() {
   createUser()
     .then((response) => {
       console.log("Success" + response);
