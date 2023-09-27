@@ -4,11 +4,3 @@ export default function uploadPhoto(filename) {
     reject(new Error(`${fileName} cannot be processed`));
   });
 }
-
-uploadPhoto("guillaume.jpg")
-  .then((pic) => {
-    console.log(pic);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
